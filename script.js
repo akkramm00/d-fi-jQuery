@@ -1,8 +1,12 @@
 $(() => {
-    alert('jQuery est correctement bien défini !')
+console.log('jQuery est correctement défini !')
+//======== Modifions la couleur du h1 ==============
+
+$('h1').css('color' , 'green');
+
+//============ first h2 in italic style ============
+
+$('h2').first().css('font-style', 'italic').text('Mes meilleurs articles')
+
 });
-if(jQuery) {
-    console.log('jQuery esty correctement défini !')
-}else{
-    console.log('il y a un souci dans la definition de jQuery !')
-};
+
